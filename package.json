@@ -1,6 +1,6 @@
 {
   "name": "@luaisgoated/js-watch",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A little node.js package that can run your vanilla .js files when they change.",
   "main": "index.js",
   "scripts": {
@@ -22,10 +22,10 @@
     "url": "https://github.com/ljp-projects/js-watch/issues"
   },
   "homepage": "https://github.com/ljp-projects/js-watch#readme",
-  "dependencies": {
-    "tailing-stream": "^0.2.0"
-  },
   "bin": {
     "watch": "./binary.js"
+  },
+  "devDependencies": {
+    "tailing-stream": "^0.2.0"
   }
 }

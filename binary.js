@@ -11,9 +11,13 @@ stream.on('data', buffer => {
             console.warn("An error reading the file (to execute it) occured, therefore, your file won't be executed.")
         } else {
             try {
-                eval(data.toString())
+                eval(`{
+                    (async () => {
+                        ${data.toString()}
+                    })()
+                }`)
             } catch (err) {
-                console.error("An error Executing the file occured. This means that you code has a bug (or you are using web api's not available on node.js)")
+                console.error("An error Executing the file occured. This means that your code has a bug or you are using web APIs.")
             }
         }
     })
