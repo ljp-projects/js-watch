@@ -1,0 +1,31 @@
+{
+  "name": "@luaisgoated/js-watch",
+  "version": "0.0.7",
+  "description": "A little node.js package that can run your vanilla .js files when they change.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljp-projects/js-watch.git"
+  },
+  "keywords": [
+    "watch",
+    "js",
+    "small",
+    "simple"
+  ],
+  "author": "Lucas Plumb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljp-projects/js-watch/issues"
+  },
+  "homepage": "https://github.com/ljp-projects/js-watch#readme",
+  "dependencies": {
+    "tailing-stream": "^0.2.0"
+  },
+  "bin": {
+    "watch": "./binary.js"
+  }
+}
