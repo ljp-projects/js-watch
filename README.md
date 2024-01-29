@@ -6,7 +6,6 @@ js-watch is a simple npm cli that can watch ay file you put into it and execute 
 
 * Use web APIs
 * Use stdin
-* Mess with the local scope of the cli.
 
 ## Things you CAN do
 
